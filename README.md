@@ -69,7 +69,7 @@ https://console.cloud.google.com/welcome?project=youtube-second-409106
 
 **User Guide**
 
-**Step 1.**** Data collection.**
+**Step 1.Data collection**
 
 Search channel_id, copy and paste on the input box.
 
