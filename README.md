@@ -7,11 +7,11 @@ This project extracts the particular youtube channel data by using the youtube c
 **Technologies Used:**
 The following technologies are used in this project:
 
-Python: The programming language used for building the application and scripting tasks.
-Streamlit: A Python library used for creating interactive web applications and data visualizations.
-YouTube API: Google API is used to retrieve channel and video data from YouTube.
-MongoDB: MongoDB is a source-available, cross-platform, document-oriented database program.
-SQL (Postgre-SQL): Postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance.
+1.Python: The programming language used for building the application and scripting tasks.
+2.Streamlit: A Python library used for creating interactive web applications and data visualizations.
+3.YouTube API: Google API is used to retrieve channel and video data from YouTube.
+4.MongoDB: MongoDB is a source-available, cross-platform, document-oriented database program.
+5.SQL (Postgre-SQL): Postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance.
 
 **Installation and Setup**
 To run the YouTube Data Harvesting and Warehousing project, follow these steps:
