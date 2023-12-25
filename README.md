@@ -10,79 +10,81 @@ This project extracts the particular youtube channel data by using the youtube c
 **Technologies Used:**
 The following technologies are used in this project:
 
-1.Python: The programming language used for building the application and scripting tasks.
+**1.Python:** The programming language used for building the application and scripting tasks.
 
-2.Streamlit: A Python library used for creating interactive web applications and data visualizations.
+**2.Streamlit:** A Python library used for creating interactive web applications and data visualizations.
 
-3.YouTube API: Google API is used to retrieve channel and video data from YouTube.
+**3.YouTube API:** Google API is used to retrieve channel and video data from YouTube.
 
-4.MongoDB: MongoDB is a source-available, cross-platform, document-oriented database program.
+**4.MongoDB:** MongoDB is a source-available, cross-platform, document-oriented database program.
 
-5.SQL (Postgre-SQL): Postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance.
+**5.SQL (Postgre-SQL):** Postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance.
 
 **Installation and Setup**
 To run the YouTube Data Harvesting and Warehousing project, follow these steps:
 
-Install Python: Install the Python programming language on your machine.
+**1.Install Python:** Install the Python programming language on your machine.
 
-Install Required Packages: Install the necessary Python packages using pip or conda package manager. 
+**2.Install Required Packages:** Install the necessary Python packages using pip or conda package manager. 
 pip install google-api-python-client, pymongo,pandas,numpy,streamlit,psycopg2
 
-Import Libraries:
+**3.Import Libraries:**
 
-Youtube API libraries
+**Youtube API libraries**
 
 import googleapiclient.discovery
 
 from googleapiclient.discovery import build
 
-MongoDB
+**MongoDB**
 
 import pymongo
 
 from pymongo import MongoClient
 
-SQL libraries
+**SQL libraries**
 
 import psycopg2
+
+**pandas and numpy**
 
 import pandas as pd
 
 import numpy as np
 
-Dashboard libraries
+**Dashboard libraries**
 
 import streamlit as st
 
-Set Up Google API: Set up a Google API project and obtain the necessary API credentials for accessing the YouTube API.
+**4.Set Up Google API:** Set up a Google API project and obtain the necessary API credentials for accessing the YouTube API.
 https://console.cloud.google.com/welcome?project=youtube-second-409106
 
-Configure Database: Set up a MongoDB database and SQL database (PostgreSQLSQL) for storing the data.
+**5.Configure Database:** Set up a MongoDB database and SQL database (PostgreSQLSQL) for storing the data.
 
-Configure Application: Update the configuration file or environment variables with the necessary API credentials and database connection details.
+**6.Configure Application:** Update the configuration file or environment variables with the necessary API credentials and database connection details.
 
-Run the Application: Launch the Streamlit application using the command-line interface-streamlit run app.py
+**7.Run the Application:** Launch the Streamlit application using the command-line interface-streamlit run app.py
 
 **User Guide**
 
-Step 1. Data collection.
+**Step 1.** Data collection.
 
 Search channel_id, copy and paste on the input box.
 
-Step 2. Data Extraction
+**Step 2**. Data Extraction
 
 Click the Extract data button and display the channel information based on particular channel_id and its corresponding channel datails,video details and comment 
 details will be extracted from Youtube.
 
-Step 3. Data Storage
+**Step 3.** Data Storage
 
 Click the Upload Data to Mongodb button and store the retrieved data in a MongoDB database.
 
-Step 4.Data Migration:
+**Step 4**.Data Migration:
 
 Click the Migrate datas to SQL button and data from the data lake will be migrated to PostgreSQL database for efficient querying and analysis.
 
-Step 5.SQL queries:
+**Step 5**.SQL queries:
 
 Select a Question from the dropdown option you can get the results in Dataframe format.
 
