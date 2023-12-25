@@ -200,6 +200,8 @@ def channel_info(channel_id):
     video_datas=getvideo_data(video_ids_list)
     comment_details=getcomment_data(video_ids_list)
     
+# store all the datas into MONGODB
+
     collection1=db.channel_details
     collection1.insert_many(channel_datas)
 
@@ -259,7 +261,8 @@ if st.button("Upload data to MONGODB"):
         data= channel_info(channel_id)
         st.success(data)
 
-#Migrate datas from MONGODB to SQL(Given Channel_name as Input)
+#Migrate datas from MONGODB to SQL(Given Channel_id as Input)
+
 st.header("Data Migration to SQL")
 
 if st.button("Migrate datas to SQL"):
@@ -300,6 +303,8 @@ if st.button("Migrate datas to SQL"):
         for p in collection3.find({"Channel_id" : channel_id},{'_id' : 0}):
             cursor.execute(query,tuple(p.values()))
             mydb.commit()
+            
+#inserting values into SQL database
 
     insert_into_channel(channel_id)
     insert_into_videos(channel_id)
@@ -385,7 +390,7 @@ if question=="9.Average duration of all videos in each channel":
     mydb.commit()
     a1=cursor.fetchall()
     df2=pd.DataFrame(a1,columns=["CHANNEL_NAME","AVERAGE_DURATION"])
-    
+#convert avreage_duration into string for displaying on Streamlit
     d=[]
     for i,j in df2.iterrows():
         channel_name=j["CHANNEL_NAME"]
