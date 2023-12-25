@@ -1,16 +1,22 @@
 # Youtube-Data-Harvesting-and-Warehosuing
 **Inrtoduction**
 YouTube is one of the most popular websites on the planet. As of May 2019, more than 500 hours of video content is uploaded to the platform every single minute.
+
 With over 2 billion users, the video-sharing platform is generating billions of views with over 1 billion hours of videos watched every single day. 
+
 This project extracts the particular youtube channel data by using the youtube channel id, processes the data, and stores it in the MongoDB database. It has the option to migrate the data to MySQL from MongoDB then analyse the data and give the results depending on the customer queries.
 
 **Technologies Used:**
 The following technologies are used in this project:
 
 1.Python: The programming language used for building the application and scripting tasks.
+
 2.Streamlit: A Python library used for creating interactive web applications and data visualizations.
+
 3.YouTube API: Google API is used to retrieve channel and video data from YouTube.
+
 4.MongoDB: MongoDB is a source-available, cross-platform, document-oriented database program.
+
 5.SQL (Postgre-SQL): Postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance.
 
 **Installation and Setup**
