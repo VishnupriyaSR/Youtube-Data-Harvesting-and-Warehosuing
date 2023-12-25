@@ -1,4 +1,4 @@
-# Youtube-Data-Harvesting-and-Warehosuing
+# Youtube-Data-Harvesting-and-Warehousing
 **Inrtoduction**
 
 YouTube is one of the most popular websites on the planet. As of May 2019, more than 500 hours of video content is uploaded to the platform every single minute.
