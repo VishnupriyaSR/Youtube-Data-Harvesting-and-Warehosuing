@@ -23,49 +23,78 @@ The following technologies are used in this project:
 To run the YouTube Data Harvesting and Warehousing project, follow these steps:
 
 Install Python: Install the Python programming language on your machine.
+
 Install Required Packages: Install the necessary Python packages using pip or conda package manager. 
 pip install google-api-python-client, pymongo,pandas,numpy,streamlit,psycopg2
+
 Import Libraries:
+
 Youtube API libraries
+
 import googleapiclient.discovery
+
 from googleapiclient.discovery import build
 
 MongoDB
+
 import pymongo
+
 from pymongo import MongoClient
 
 SQL libraries
+
 import psycopg2
 
 import pandas as pd
+
 import numpy as np
 
 Dashboard libraries
+
 import streamlit as st
 
 Set Up Google API: Set up a Google API project and obtain the necessary API credentials for accessing the YouTube API.
 https://console.cloud.google.com/welcome?project=youtube-second-409106
+
 Configure Database: Set up a MongoDB database and SQL database (PostgreSQLSQL) for storing the data.
+
 Configure Application: Update the configuration file or environment variables with the necessary API credentials and database connection details.
+
 Run the Application: Launch the Streamlit application using the command-line interface-streamlit run app.py
 
 **User Guide**
+
 Step 1. Data collection.
+
 Search channel_id, copy and paste on the input box.
+
 Step 2. Data Extraction
-Click the Extract data button and display the channel information based on particular channel_id and its corresponding channel datails,video details and comment details will be extracted from Youtube.
+
+Click the Extract data button and display the channel information based on particular channel_id and its corresponding channel datails,video details and comment 
+details will be extracted from Youtube.
+
 Step 3. Data Storage
+
 Click the Upload Data to Mongodb button and store the retrieved data in a MongoDB database.
+
 Step 4.Data Migration:
+
 Click the Migrate datas to SQL button and data from the data lake will be migrated to PostgreSQL database for efficient querying and analysis.
+
 Step 5.SQL queries:
+
 Select a Question from the dropdown option you can get the results in Dataframe format.
 
 **References**
+
 Python Documentation: https://docs.python.org/
+
 Streamlit Documentation: https://docs.streamlit.io/
+
 YouTube API Documentation: https://developers.google.com/youtube
+
 MongoDB Documentation: https://docs.mongodb.com/
+
 PostgreSQL Documentation:https://www.postgresql.org/docs/
 
 
