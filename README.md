@@ -8,6 +8,7 @@ With over 2 billion users, the video-sharing platform is generating billions of 
 This project extracts the particular youtube channel data by using the youtube channel id, processes the data, and stores it in the MongoDB database. It has the option to migrate the data to MySQL from MongoDB then analyse the data and give the results depending on the customer queries.
 
 **Technologies Used:**
+
 The following technologies are used in this project:
 
 **1.Python:** The programming language used for building the application and scripting tasks.
@@ -21,6 +22,7 @@ The following technologies are used in this project:
 **5.SQL (Postgre-SQL):** Postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance.
 
 **Installation and Setup**
+
 To run the YouTube Data Harvesting and Warehousing project, follow these steps:
 
 **1.Install Python:** Install the Python programming language on your machine.
@@ -67,24 +69,24 @@ https://console.cloud.google.com/welcome?project=youtube-second-409106
 
 **User Guide**
 
-**Step 1.** Data collection.
+**Step 1.**** Data collection.**
 
 Search channel_id, copy and paste on the input box.
 
-**Step 2**. Data Extraction
+**Step 2**. **Data Extraction**
 
 Click the Extract data button and display the channel information based on particular channel_id and its corresponding channel datails,video details and comment 
 details will be extracted from Youtube.
 
-**Step 3.** Data Storage
+**Step 3.** **Data Storage**
 
 Click the Upload Data to Mongodb button and store the retrieved data in a MongoDB database.
 
-**Step 4**.Data Migration:
+**Step 4**.**Data Migration**
 
 Click the Migrate datas to SQL button and data from the data lake will be migrated to PostgreSQL database for efficient querying and analysis.
 
-**Step 5**.SQL queries:
+**Step 5**.**SQL queries**
 
 Select a Question from the dropdown option you can get the results in Dataframe format.
 
